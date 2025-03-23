@@ -175,6 +175,7 @@ map i :rename # before extension
 map a :rename; cmd-right # after extension
 map B bulkrename
 map b $setbg $f
+map m $mpv $f
 
 map <c-e> down
 map <c-y> up
