@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 # Use $XINITRC variable if file exists.
 [ -f "$XINITRC" ] && alias startx='startx $XINITRC'
 
