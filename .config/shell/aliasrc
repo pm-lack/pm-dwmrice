@@ -1,10 +1,10 @@
-# This is a shell script
 #!/bin/sh
 
-# Use $XINITRC variable if file exists.
-[ -f "$XINITRC" ] && alias startx='startx $XINITRC'
 
-[ -f "$MBSYNCRC" ] && alias mbsync='mbsync -c $MBSYNCRC'
+# Use $XINITRC variable if file exists.
+[ -f "$XINITRC" ] && alias startx="startx $XINITRC"
+
+[ -f "$MBSYNCRC" ] && alias mbsync="mbsync -c $MBSYNCRC"
 
 # sudo not required for some system commands
 for command in mount umount sv pacman updatedb su shutdown poweroff reboot ; do
@@ -21,8 +21,9 @@ alias \
 	cp="cp -iv" \
 	mv="mv -iv" \
 	rm="rm -vI" \
-	bc="bc -ql" \
 	ll="ls -la" \
+	susu="sudo su" \
+	bc="bc -ql" \
 	rsync="rsync -vrPlu" \
 	mkd="mkdir -pv" \
 	yt="yt-dlp --embed-metadata -i" \
@@ -45,8 +46,8 @@ alias \
 	trem="transmission-remote" \
 	YT="youtube-viewer" \
 	sdn="shutdown -h now" \
-	e='$EDITOR' \
-	v='$EDITOR' \
+	e="$EDITOR" \
+	v="$EDITOR" \
 	p="pacman" \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
@@ -55,5 +56,4 @@ alias \
 
 alias \
 	lf="lfub" \
-	magit="nvim -c MagitOnly" \
-	ref='shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutenvrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc'
+	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutenvrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc"
