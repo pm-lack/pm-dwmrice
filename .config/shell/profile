@@ -9,10 +9,10 @@ export PATH="$PATH:$(find ~/.local/bin -type d | paste -sd ':' -)"
 unsetopt PROMPT_SP 2>/dev/null
 
 # Default programs:
-export EDITOR="nvim"
+export EDITOR="vim"
 export TERMINAL="st"
 export TERMINAL_PROG="st"
-export BROWSER="librewolf"
+export BROWSER="zen-browser"
 
 # Change the default crypto/weather monitor sites.
 # export CRYPTOURL="rate.sx"
