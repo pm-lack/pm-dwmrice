@@ -179,7 +179,7 @@ map m $mpv $f
 
 map <c-e> down
 map <c-y> up
-map V push :!nvim<space>
+map V push :!vim<space>
 
 map W $setsid -f $TERMINAL >/dev/null 2>&1
 
