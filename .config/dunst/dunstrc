@@ -1,12 +1,13 @@
 [global]
     monitor = 0
     follow = keyboard
-    width = 370
-    height = (0,350)
-    offset = (0,19)
+    width = (250, 500)
+    height = (0, 750)
+    offset = (17, 26)
     padding = 2
     horizontal_padding = 2
-    transparency = 25
+    transparency = 10
+    frame_width = 1
     font = Monospace 12
     format = "<b>%s</b>\n%b"
 
@@ -24,4 +25,4 @@
     background = "#1cc24d"
     foreground = "#ebdbb2"
     frame_color = "#fabd2f"
-    timeout = 10
+    timeout = 15
