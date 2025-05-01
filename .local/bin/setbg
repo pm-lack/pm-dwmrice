@@ -27,7 +27,7 @@ case "$(file --mime-type -b "$trueloc")" in
 	*) [ -z "$silent" ] && notify-send "🖼️ Error" "Not a valid image or directory." ; exit 1;;
 esac
 
-Set GTK and QT with wpgtk
+#Set GTK and QT with wpgtk
 wpg -a "$1"
 wpg -s "$1"
 
