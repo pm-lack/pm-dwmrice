@@ -27,6 +27,10 @@ case "$(file --mime-type -b "$trueloc")" in
 	*) [ -z "$silent" ] && notify-send "🖼️ Error" "Not a valid image or directory." ; exit 1;;
 esac
 
+Set GTK and QT with wpgtk
+wpg -a "$1"
+wpg -s "$1"
+
 # If pywal is installed, use it.
 if command -v wal >/dev/null 2>&1 ; then
 	wal -n -i "$(readlink -f $bgloc)" -o "${XDG_CONFIG_HOME:-$HOME/.config}/wal/postrun" >/dev/null 2>&1
