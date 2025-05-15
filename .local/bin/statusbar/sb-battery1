@@ -1,0 +1,9 @@
+#!/bin/sh
+
+BAT_PATH="/sys/class/power_supply/BAT0"
+if [ -f "$BAT_PATH/capacity" ]; then
+    PERCENT=$(cat "$BAT_PATH/capacity")
+    echo "[bat:${PERCENT}%]"
+else
+    echo "[bat:N/A]"
+fi
