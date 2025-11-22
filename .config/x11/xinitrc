@@ -17,6 +17,13 @@ fi
 # picom
 picom -b
 
+# xrandr
+xrandr --output HDMI-0 --mode 2560x1440 --pos 0x0 --primary --rate 240
+xrandr --output DP-0 --mode 2560x1440 --pos 2561x0 --rate 165
+
+# Key Repeat / Auto-repeat behavior
+xset r rate 400 32
+
 # Activate dbus variables
 dbus-update-activation-environment --all
 dbus-launch ssh-agent dwm
